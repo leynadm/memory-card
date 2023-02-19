@@ -1,5 +1,31 @@
 img{
-    width: 15%;
+    width: 26.31rem;
+    height: 38.37rem;
     margin: 0.5rem;
+    min-width: 12%;
+}
 
+.cards-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-tracker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-score{
+    margin-left: 5rem;
+}
+
+.scoreboard{
+    border-radius: 0.25rem;
+    background-color: lightblue;
+    padding: 0.25rem;
+    font-family: 'PT Serif', serif;
+    opacity: 75%;
 }
