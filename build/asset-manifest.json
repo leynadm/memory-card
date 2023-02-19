@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.64f78d84.css",
+    "main.js": "/memory-card/static/js/main.db82c23d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/memory-card/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Slifer the Sky Dragon_Divine-Beast_Effect Monster_lvl10_DIVINE.jpg": "/memory-card/static/media/Slifer the Sky Dragon_Divine-Beast_Effect Monster_lvl10_DIVINE.000c641b3840f34a1807.jpg",
+    "static/media/The Winged Dragon of Ra_Divine-Beast_Effect Monster_lvl10_DIVINE.jpg": "/memory-card/static/media/The Winged Dragon of Ra_Divine-Beast_Effect Monster_lvl10_DIVINE.f59afe01c40e5cdb5e81.jpg",
+    "static/media/Dark Necrofear_Fiend_Effect Monster_lvl8_DARK.jpg": "/memory-card/static/media/Dark Necrofear_Fiend_Effect Monster_lvl8_DARK.e5c99e7992dc5fdcd742.jpg",
+    "static/media/Gravekeeper's Supernaturalist_Spellcaster_Fusion Monster_lvl7_DARK.jpg": "/memory-card/static/media/Gravekeeper's Supernaturalist_Spellcaster_Fusion Monster_lvl7_DARK.ef11ae05c33f96d30344.jpg",
+    "static/media/Obelisk the Tormentor_Divine-Beast_Effect Monster_lvl10_DIVINE.jpg": "/memory-card/static/media/Obelisk the Tormentor_Divine-Beast_Effect Monster_lvl10_DIVINE.7d36c682fcfd167a41f3.jpg",
+    "static/media/The Legendary Fisherman_Warrior_Effect Monster_lvl5_WATER.jpg": "/memory-card/static/media/The Legendary Fisherman_Warrior_Effect Monster_lvl5_WATER.7f15c7e580c699a31962.jpg",
+    "static/media/Dark Magician_Spellcaster_Normal Monster_lvl7_DARK.jpg": "/memory-card/static/media/Dark Magician_Spellcaster_Normal Monster_lvl7_DARK.196de72a3d5b11f448c0.jpg",
+    "static/media/Perfectly Ultimate Great Moth_Insect_Effect Monster_lvl8_EARTH.jpg": "/memory-card/static/media/Perfectly Ultimate Great Moth_Insect_Effect Monster_lvl8_EARTH.52bca84ceeae1c56252e.jpg",
+    "static/media/Relinquished_Spellcaster_Ritual Effect Monster_lvl1_DARK.jpg": "/memory-card/static/media/Relinquished_Spellcaster_Ritual Effect Monster_lvl1_DARK.50eb2c38e08ce28badb4.jpg",
+    "static/media/Blue-Eyes White Dragon_Dragon_Normal Monster_lvl8_LIGHT.jpg": "/memory-card/static/media/Blue-Eyes White Dragon_Dragon_Normal Monster_lvl8_LIGHT.9a1f9ee46c4f739654be.jpg",
+    "static/media/Red-Eyes Black Dragon_Dragon_Normal Monster_lvl7_DARK.jpg": "/memory-card/static/media/Red-Eyes Black Dragon_Dragon_Normal Monster_lvl7_DARK.0f222f11b03a478d503a.jpg",
+    "static/media/Cyber Harpie Lady_Winged Beast_Effect Monster_lvl4_WIND.jpg": "/memory-card/static/media/Cyber Harpie Lady_Winged Beast_Effect Monster_lvl4_WIND.24dd90fe8951f0abd7d0.jpg",
+    "static/media/logo.svg": "/memory-card/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/memory-card/index.html",
+    "main.64f78d84.css.map": "/memory-card/static/css/main.64f78d84.css.map",
+    "main.db82c23d.js.map": "/memory-card/static/js/main.db82c23d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/memory-card/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64f78d84.css",
+    "static/js/main.db82c23d.js"
+  ]
+}

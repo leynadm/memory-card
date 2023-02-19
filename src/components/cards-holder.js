@@ -14,6 +14,7 @@ import imgTheLegendaryFisherman from "../images/The Legendary Fisherman_Warrior_
 import "../styles/cards-holder.css";
 
 const CardsHolder = () => {
+  
   const [selectedCards, setSelectedCards] = useState([]);
 
   const [score, setScore] = useState(0);
@@ -93,6 +94,7 @@ const CardsHolder = () => {
       }
       setSelectedCards([]);
     }
+
   };
 
   const checkGameState = (image) => {
@@ -101,22 +103,30 @@ const CardsHolder = () => {
   };
 
   return (
-    <div className="gameboard">
+
+    <div>
+
+      <div className="gameboard">
+
+        <div className="cards-holder">
+          
+          {randomImages.map((image, index) => (
+            <img
+              key={index}
+              onClick={() => checkGameState(image)}
+              src={image.src}
+              className="card-image"
+              alt={`card ${index}`}
+            />
+          ))}
+        </div>
+      </div>
+
       <div className="score-tracker">
         <div className="current-score scoreboard">Current Score: {score}</div>
         <div className="best-score scoreboard"> Your Best Score: {bestScore}</div>
-      </div>
+    </div>
 
-      <div className="cards-holder">
-        {randomImages.map((image, index) => (
-          <img
-            key={index}
-            onClick={() => checkGameState(image)}
-            src={image.src}
-            alt={`card ${index}`}
-          />
-        ))}
-      </div>
     </div>
   );
 };

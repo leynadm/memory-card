@@ -1,8 +1,7 @@
 img{
-    width: 26.31rem;
-    height: 38.37rem;
+    width: auto;
+    height: auto;
     margin: 0.5rem;
-    min-width: 12%;
 }
 
 .cards-holder{
@@ -24,8 +23,26 @@ img{
 
 .scoreboard{
     border-radius: 0.25rem;
-    background-color: lightblue;
     padding: 0.25rem;
     font-family: 'PT Serif', serif;
-    opacity: 75%;
+    opacity: 75%;;
 }
+
+.card-holder{
+    box-shadow: 5px 5px 5px 0px black;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width: 45%;
+        height: auto;
+        margin: 0.5rem;
+    }
+  }
+
+.card-image{
+    padding: 0.25rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
