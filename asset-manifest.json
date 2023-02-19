@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.64f78d84.css",
-    "main.js": "/memory-card/static/js/main.db82c23d.js",
+    "main.css": "/memory-card/static/css/main.3bccac15.css",
+    "main.js": "/memory-card/static/js/main.fa0c6db8.js",
     "static/js/787.28cb0dcd.chunk.js": "/memory-card/static/js/787.28cb0dcd.chunk.js",
     "static/media/Slifer the Sky Dragon_Divine-Beast_Effect Monster_lvl10_DIVINE.jpg": "/memory-card/static/media/Slifer the Sky Dragon_Divine-Beast_Effect Monster_lvl10_DIVINE.000c641b3840f34a1807.jpg",
     "static/media/The Winged Dragon of Ra_Divine-Beast_Effect Monster_lvl10_DIVINE.jpg": "/memory-card/static/media/The Winged Dragon of Ra_Divine-Beast_Effect Monster_lvl10_DIVINE.f59afe01c40e5cdb5e81.jpg",
@@ -15,14 +15,13 @@
     "static/media/Blue-Eyes White Dragon_Dragon_Normal Monster_lvl8_LIGHT.jpg": "/memory-card/static/media/Blue-Eyes White Dragon_Dragon_Normal Monster_lvl8_LIGHT.9a1f9ee46c4f739654be.jpg",
     "static/media/Red-Eyes Black Dragon_Dragon_Normal Monster_lvl7_DARK.jpg": "/memory-card/static/media/Red-Eyes Black Dragon_Dragon_Normal Monster_lvl7_DARK.0f222f11b03a478d503a.jpg",
     "static/media/Cyber Harpie Lady_Winged Beast_Effect Monster_lvl4_WIND.jpg": "/memory-card/static/media/Cyber Harpie Lady_Winged Beast_Effect Monster_lvl4_WIND.24dd90fe8951f0abd7d0.jpg",
-    "static/media/logo.svg": "/memory-card/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/memory-card/index.html",
-    "main.64f78d84.css.map": "/memory-card/static/css/main.64f78d84.css.map",
-    "main.db82c23d.js.map": "/memory-card/static/js/main.db82c23d.js.map",
+    "main.3bccac15.css.map": "/memory-card/static/css/main.3bccac15.css.map",
+    "main.fa0c6db8.js.map": "/memory-card/static/js/main.fa0c6db8.js.map",
     "787.28cb0dcd.chunk.js.map": "/memory-card/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64f78d84.css",
-    "static/js/main.db82c23d.js"
+    "static/css/main.3bccac15.css",
+    "static/js/main.fa0c6db8.js"
   ]
 }
