@@ -9,20 +9,70 @@ import imgRedEyesBlackDragon from "../images/Red-Eyes Black Dragon_Dragon_Normal
 import imgRelinquished from "../images/Relinquished_Spellcaster_Ritual Effect Monster_lvl1_DARK.jpg"
 import imgSliferTheSkyDragon from "../images/Slifer the Sky Dragon_Divine-Beast_Effect Monster_lvl10_DIVINE.jpg"
 import imgTheWingedDragonOfRa from "../images/The Winged Dragon of Ra_Divine-Beast_Effect Monster_lvl10_DIVINE.jpg"
+import imgGravekeeperSupernaturalist from "../images/Gravekeeper's Supernaturalist_Spellcaster_Fusion Monster_lvl7_DARK.jpg"
+import imgTheLegendaryFisherman from "../images/The Legendary Fisherman_Warrior_Effect Monster_lvl5_WATER.jpg"
+import "../styles/cards-holder.css"
 
 const CardsHolder = () => {
 
+    const [score, setScore] = useState(0);
+    const [bestScore, setBestScore] = useState(0);
+
+    const [imageChosen, setImageChosen] = useState("")
+
     const [randomImages, setRandomImages] = useState([
-        imgDarkMagician,
-        imgBlueEyesWhiteDragon,
-        imgCyberHarpieLady,
-        imgDarkNecrofear,
-        imgObeliskTheTormentor,
-        imgPerfectlyUltimateGreatMoth,
-        imgRedEyesBlackDragon,
-        imgRelinquished,
-        imgSliferTheSkyDragon,
-        imgTheWingedDragonOfRa])
+        {
+            src: imgDarkMagician,
+            name: "Dark Magician"
+        },
+        {
+            src: imgBlueEyesWhiteDragon,
+            name: "Blue Eyes White Dragon"
+        },
+        {
+            src: imgCyberHarpieLady,
+            name: "Cyber Harpie Lady"
+        },
+        {
+            src: imgDarkNecrofear,
+            name: "Dark Necrofear"
+        },
+        {
+            src: imgObeliskTheTormentor,
+            name: "Obelisk The Tormentor"
+        },
+        {
+            src: imgPerfectlyUltimateGreatMoth,
+            name: "Perfectly Ultimate Great Moth"
+        },
+        {
+            src: imgRedEyesBlackDragon,
+            name: "Red Eyes Black Dragon"
+        },
+        {
+            src: imgRelinquished,
+            name: "Relinquished"
+        },
+        {
+            src: imgSliferTheSkyDragon,
+            name: "Slifer The Sky Dragon"
+        },
+        {
+            src: imgTheWingedDragonOfRa,
+            name: "The Winged Dragon of Ra"
+
+        },
+        {
+            src: imgGravekeeperSupernaturalist,
+            name: "Gravekeeper Supernaturalist"
+
+        },
+        {
+            src: imgTheLegendaryFisherman,
+            name: "The Legendary Fisherman"
+
+        }
+    ])
 
     const onClickReshuffle = () => {
         setRandomImages(shuffleArray([...randomImages]));
@@ -36,10 +86,37 @@ const CardsHolder = () => {
         return array;
     };
 
+    const onClickScoreCheck = (image) => {
+        setImageChosen(image.name);
+        if (imageChosen !== image.name) {
+            setScore(score + 1)
+        } else {
+            setScore(0)
+            if(score>bestScore){
+                setBestScore(score)
+            }
+        }
+
+
+    }
+
+
+
+    const checkGameState = (image) => {
+
+        onClickReshuffle();
+        onClickScoreCheck(image)
+
+    }
+
     return (
+
         <div className="cards-holder">
+            <div className="current-score">{score}</div>
+            <div className="best-score">{bestScore}</div>
+            
             {randomImages.map((image, index) => (
-                <img key={index} onClick={onClickReshuffle} src={image} alt={`card ${index}`} />
+                <img key={index} onClick={() => checkGameState(image)} src={image.src} alt={`card ${index}`} />
             ))}
         </div>
     )
