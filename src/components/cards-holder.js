@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import imgDarkMagician from "../images/Dark Magician_Spellcaster_Normal Monster_lvl7_DARK.jpg";
 import imgBlueEyesWhiteDragon from "../images/Blue-Eyes White Dragon_Dragon_Normal Monster_lvl8_LIGHT.jpg";
 import imgCyberHarpieLady from "../images/Cyber Harpie Lady_Winged Beast_Effect Monster_lvl4_WIND.jpg";
@@ -12,13 +12,14 @@ import imgTheWingedDragonOfRa from "../images/The Winged Dragon of Ra_Divine-Bea
 import imgGravekeeperSupernaturalist from "../images/Gravekeeper's Supernaturalist_Spellcaster_Fusion Monster_lvl7_DARK.jpg";
 import imgTheLegendaryFisherman from "../images/The Legendary Fisherman_Warrior_Effect Monster_lvl5_WATER.jpg";
 import "../styles/cards-holder.css";
+import GameWinner from "./game-winner";
 
 const CardsHolder = () => {
-  
   const [selectedCards, setSelectedCards] = useState([]);
 
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [showWinnerModal, setShowWinnerModal] = useState(false);
 
   const [randomImages, setRandomImages] = useState([
     {
@@ -94,22 +95,31 @@ const CardsHolder = () => {
       }
       setSelectedCards([]);
     }
-
   };
+
+  useEffect(() => {
+    if (score === 12) {
+      setShowWinnerModal(true);
+      setBestScore(score)
+      setScore(0)
+    }
+
+
+  }, [score]);
 
   const checkGameState = (image) => {
     onClickReshuffle();
     onClickScoreCheck(image);
   };
 
+  const handleShowWinnerClick = () => {
+    setShowWinnerModal(false);
+  };
+
   return (
-
     <div>
-
       <div className="gameboard">
-
         <div className="cards-holder">
-          
           {randomImages.map((image, index) => (
             <img
               key={index}
@@ -120,13 +130,17 @@ const CardsHolder = () => {
             />
           ))}
         </div>
+
+        {showWinnerModal && <GameWinner onClose={handleShowWinnerClick} />}
       </div>
 
       <div className="score-tracker">
         <div className="current-score scoreboard">Current Score: {score}</div>
-        <div className="best-score scoreboard"> Your Best Score: {bestScore}</div>
-    </div>
-
+        <div className="best-score scoreboard">
+          {" "}
+          Your Best Score: {bestScore}
+        </div>
+      </div>
     </div>
   );
 };
